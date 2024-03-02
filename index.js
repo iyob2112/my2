@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json()); // Middleware for parsing JSON body
 
 // Connect to MongoDB using Mongoose
-mongoose.connect('mongodb+srv://eyobmulusew:iyobmw123@cluster0.xdtqvnx.mongodb.net/f1', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 
